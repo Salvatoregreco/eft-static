@@ -1,17 +1,562 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="it">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/static/img/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/main-k0ediss2.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-Bvk8jtqG.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Scopri il potere dell&#039;EFT per il benessere emotivo e fisico. Riduci lo stress e trova equilibrio interiore.">
+  <meta name="keywords" content="EFT, Electronic Funds Transfer, Payment Processing">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>EFT Benessere</title>
+  <script type="module" crossorigin src="/assets/main-BwDX4h07.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CuM8Gfe6.css">
 </head>
 
-<body>
-  <div id="app"></div>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-[var(--rosa-scuro)] shadow py-4 text-white">
+    <div class="flex justify-between items-center mx-auto px-6 container">
+      <!-- Logo -->
+      <a href="/" class="font-bold text-3xl">
+        <img src="https://eft.sgdev.tech/logo.png" alt="EFT Loredana" class="h-12" />
+      </a>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="lg:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:block">
+        <ul class="flex space-x-6">
+          <li><a href="/" class="hover:underline">Home</a></li>
+          <li><a href="#eft" class="hover:underline">EFT</a></li>
+          <li><a href="#chi-sono" class="hover:underline">Chi Sono</a></li>
+          <li><a href="#servizi" class="hover:underline">Servizi</a></li>
+          <li><a href="#testimonianze" class="hover:underline">Testimonianze</a></li>
+          <li><a href="#faq" class="hover:underline">FAQ</a></li>
+          <li><a href="#contatti" class="hover:underline">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu"
+      class="lg:hidden top-0 right-0 bottom-0 z-50 fixed bg-[var(--rosa-scuro)] w-full h-screen transition-transform translate-x-full duration-300 ease-in-out transform">
+      <div class="flex justify-end p-6">
+        <button id="close-menu-button">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="flex justify-center h-full">
+        <ul class="flex flex-col items-center space-y-6 text-white text-xl">
+          <li><a href="/" class="hover:underline">Home</a></li>
+          <li><a href="#eft" class="hover:underline">EFT</a></li>
+          <li><a href="#chi-sono" class="hover:underline">Chi Sono</a></li>
+          <li><a href="#servizi" class="hover:underline">Servizi</a></li>
+          <li><a href="#testimonianze" class="hover:underline">Testimonianze</a></li>
+          <li><a href="#faq" class="hover:underline">FAQ</a></li>
+          <li><a href="#contatti" class="hover:underline">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative bg-[var(--rosa-chiaro)] pt-10 md:pt-20 pb-32 text-center">
+    <div class="mx-auto px-6 container">
+      <h2 class="font-semibold text-4xl">Scopri il Potere di EFT</h2>
+      <p class="mt-4 text-lg">Libera le emozioni negative e ritrova il benessere interiore.</p>
+      <a href="#contatti"
+        class="inline-block bg-[var(--rosa-scuro)] hover:bg-pink-700 shadow-md mt-6 px-6 py-3 rounded-lg text-white transition">
+        Prenota una sessione
+      </a>
+      <div class="flex justify-center mt-12">
+        <!-- Semplice placeholder per video -->
+        <div class="relative bg-gray-800 bg-opacity-200 shadow-md mx-auto rounded-lg w-full max-w-2xl overflow-hidden">
+          <!-- Proporzioni 16:9 per il video -->
+          <div class="pb-[56.25%]"></div>
+
+          <!-- Overlay con icona play -->
+          <div class="absolute inset-0 flex flex-col justify-center items-center">
+            <div class="flex justify-center items-center bg-black bg-opacity-80 mb-4 rounded-full w-20 h-20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG Divider con onda -->
+    <div class="bottom-[-10px] left-0 absolute w-full overflow-hidden leading-[0]">
+      <svg class="block relative w-full h-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+        preserveAspectRatio="none">
+        <path fill="var(--bianco-crema)"
+          d="M0,160L60,149.3C120,139,240,117,360,128C480,139,600,181,720,181.3C840,181,960,139,1080,117.3C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Sezione EFT -->
+  <section class="bg-[var(--bianco-crema)] py-10 md:py-20" id="eft">
+    <div class="mx-auto px-6 container">
+      <div class="mb-16 text-center">
+        <h3 class="mb-4 font-bold text-4xl">Cos'è EFT?</h3>
+        <div class="bg-[var(--rosa-scuro)] mx-auto rounded-full w-24 h-1"></div>
+        <p class="mx-auto mt-6 max-w-2xl text-gray-600">Scopri come questa tecnica può aiutarti a ritrovare il tuo
+          equilibrio emotivo e fisico</p>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-xl text-center leading-relaxed">
+        L'EFT (Emotional Freedom Technique) è una tecnica di rilascio emozionale basata su picchiettamenti
+        su punti specifici del corpo. Consente di ridurre lo stress, trovare equilibrio emotivo e migliorare
+        il benessere fisico.
+      </p>
+    </div>
+  </section>
+
+  <!-- Chi Sono -->
+  <section id="chi-sono" class="relative bg-[var(--rosa-chiaro)] py-10 md:py-20">
+    <div class="mx-auto px-6 container">
+      <div class="mb-16 text-center">
+        <h3 class="mb-4 font-bold text-4xl">Chi Sono</h3>
+        <div class="bg-[var(--rosa-scuro)] mx-auto rounded-full w-24 h-1"></div>
+      </div>
+
+      <div class="flex lg:flex-row flex-col items-center gap-12">
+        <div class="lg:w-1/2">
+          <img src="https://placehold.co/400x400?text=Foto" alt="Loredana"
+            class="shadow-xl mx-auto border-4 border-white rounded-full w-64 h-64 object-cover" />
+        </div>
+
+        <div class="space-y-6 lg:w-1/2">
+          <p class="text-lg leading-relaxed">
+            Ciao, sono Loredana, praticante certificata di EFT con oltre 5 anni di esperienza nel campo del benessere
+            emotivo.
+          </p>
+
+          <p class="text-lg leading-relaxed">
+            Il mio percorso con l'EFT è iniziato durante un periodo di trasformazione personale, quando ho scoperto il
+            potere straordinario di questa tecnica nel liberare blocchi emotivi e trasformare la vita delle persone.
+          </p>
+
+          <div class="bg-white shadow-md p-6 rounded-lg">
+            <h4 class="mb-4 font-semibold text-xl">Le Mie Certificazioni</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg class="mr-2 w-5 h-5 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Practitioner Certificata EFT Livello 1 e 2
+              </li>
+              <li class="flex items-center">
+                <svg class="mr-2 w-5 h-5 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Master in Tecniche di Rilascio Emotivo
+              </li>
+              <li class="flex items-center">
+                <svg class="mr-2 w-5 h-5 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Specializzazione in Trauma Recovery
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi -->
+  <section id="servizi" class="bg-[var(--bianco-crema)] py-10 md:py-20">
+    <div class="mx-auto px-6 container">
+      <div class="mb-16 text-center">
+        <h3 class="mb-4 font-bold text-4xl">I Miei Servizi</h3>
+        <div class="bg-[var(--rosa-scuro)] mx-auto rounded-full w-24 h-1"></div>
+        <p class="mx-auto mt-6 max-w-2xl text-gray-600">Scegli il percorso più adatto alle tue esigenze per iniziare il
+          tuo viaggio verso il benessere emotivo</p>
+      </div>
+
+      <div class="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Sessioni Individuali -->
+        <div class="group bg-white shadow-xl rounded-2xl overflow-hidden service-card">
+          <div class="p-6">
+            <div class="relative">
+              <div
+                class="flex justify-center items-center bg-[var(--rosa-chiaro)] mx-auto mb-6 rounded-2xl w-20 h-20 group-hover:rotate-6 transition-transform duration-300 transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--rosa-scuro)]" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+            </div>
+            <h4 class="mb-4 font-bold text-2xl text-center">Sessioni Individuali</h4>
+            <p class="mb-6 text-gray-600 text-center">Percorsi personalizzati one-to-one per affrontare specifiche
+              problematiche emotive o fisiche.</p>
+            <div class="bg-gray-50 mb-6 p-4 rounded-xl">
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Durata: 60 minuti</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>In presenza o online</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Piano personalizzato</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="#contatti"
+              class="block bg-[var(--rosa-scuro)] hover:bg-pink-700 shadow-lg hover:shadow-xl py-3 rounded-xl text-white text-center hover:scale-105 transition-colors duration-300 transform">
+              Prenota Sessione
+            </a>
+          </div>
+        </div>
+
+        <!-- Workshops di Gruppo -->
+        <div class="group bg-white shadow-xl rounded-2xl overflow-hidden service-card">
+          <div class="p-6">
+            <div class="relative">
+              <div
+                class="flex justify-center items-center bg-[var(--rosa-chiaro)] mx-auto mb-6 rounded-2xl w-20 h-20 group-hover:rotate-6 transition-transform duration-300 transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--rosa-scuro)]" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+            </div>
+            <h4 class="mb-4 font-bold text-2xl text-center">Workshops di Gruppo</h4>
+            <p class="mb-6 text-gray-600 text-center">Sessioni di gruppo per imparare e praticare l'EFT in un ambiente
+              supportivo e collaborativo.</p>
+            <div class="bg-gray-50 mb-6 p-4 rounded-xl">
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Gruppi di 5-10 persone</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Workshop mensili</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Materiale incluso</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="#contatti"
+              class="block bg-[var(--rosa-scuro)] hover:bg-pink-700 shadow-lg hover:shadow-xl py-3 rounded-xl text-white text-center hover:scale-105 transition-colors duration-300 transform">
+              Scopri le Date
+            </a>
+          </div>
+        </div>
+
+        <!-- Percorsi Aziendali -->
+        <div class="group bg-white shadow-xl rounded-2xl overflow-hidden service-card">
+          <div class="p-6">
+            <div class="relative">
+              <div
+                class="flex justify-center items-center bg-[var(--rosa-chiaro)] mx-auto mb-6 rounded-2xl w-20 h-20 group-hover:rotate-6 transition-transform duration-300 transform">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--rosa-scuro)]" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+            </div>
+            <h4 class="mb-4 font-bold text-2xl text-center">Percorsi Aziendali</h4>
+            <p class="mb-6 text-gray-600 text-center">Programmi su misura per aziende che vogliono migliorare il
+              benessere
+              dei dipendenti.</p>
+            <div class="bg-gray-50 mb-6 p-4 rounded-xl">
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Programmi personalizzati</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Sessioni in sede</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="flex justify-center items-center bg-[var(--rosa-chiaro)] mr-3 rounded-full w-8 h-8">
+                    <svg class="w-4 h-4 text-[var(--rosa-scuro)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </span>
+                  <span>Report e monitoraggio</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="#contatti"
+              class="block bg-[var(--rosa-scuro)] hover:bg-pink-700 shadow-lg hover:shadow-xl py-3 rounded-xl text-white text-center hover:scale-105 transition-colors duration-300 transform">
+              Richiedi Info
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonianze -->
+  <section id="testimonianze" class="bg-[var(--bianco-crema)] py-10 md:py-20">
+    <div class="mx-auto px-6 container">
+      <div class="mb-16 text-center">
+        <h3 class="mb-4 font-bold text-4xl">Testimonianze</h3>
+        <div class="bg-[var(--rosa-scuro)] mx-auto rounded-full w-24 h-1"></div>
+        <p class="mx-auto mt-6 max-w-2xl text-gray-600">Scopri le esperienze di chi ha già intrapreso questo percorso di
+          benessere</p>
+      </div>
+      <div class="mx-auto max-w-4xl swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <!-- Testimonianza 1 -->
+          <div class="swiper-slide">
+            <div class="bg-[var(--rosa-chiaro)] shadow-md p-8 rounded-lg h-full">
+              <p class="mb-6 text-lg italic testimonianza-content">L'EFT ha cambiato la mia vita! Sono molto più serena
+                e
+                rilassata. Ho notato miglioramenti significativi nella gestione dello stress quotidiano.</p>
+              <div class="flex items-center">
+                <div
+                  class="flex justify-center items-center bg-[var(--rosa-scuro)] rounded-full w-12 h-12 font-bold text-white">
+                  MR</div>
+                <div class="ml-4">
+                  <p class="font-bold">Maria R.</p>
+                  <p class="text-gray-600 text-sm">Cliente da 6 mesi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonianza 2 -->
+          <div class="swiper-slide">
+            <div class="bg-[var(--rosa-chiaro)] shadow-md p-8 rounded-lg h-full">
+              <p class="mb-6 text-lg italic testimonianza-content">Uno strumento incredibile per gestire l'ansia e lo
+                stress. Le sessioni con Loredana mi hanno aiutato a superare blocchi che avevo da anni.</p>
+              <div class="flex items-center">
+                <div
+                  class="flex justify-center items-center bg-[var(--rosa-scuro)] rounded-full w-12 h-12 font-bold text-white">
+                  LB</div>
+                <div class="ml-4">
+                  <p class="font-bold">Luca B.</p>
+                  <p class="text-gray-600 text-sm">Cliente da 3 mesi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonianza 3 -->
+          <div class="swiper-slide">
+            <div class="bg-[var(--rosa-chiaro)] shadow-md p-8 rounded-lg h-full">
+              <p class="mb-6 text-lg italic testimonianza-content">Grazie all'EFT ho superato la mia fobia dei luoghi
+                chiusi. Ora posso prendere l'ascensore senza problemi. Un cambiamento che sembrava impossibile!</p>
+              <div class="flex items-center">
+                <div
+                  class="flex justify-center items-center bg-[var(--rosa-scuro)] rounded-full w-12 h-12 font-bold text-white">
+                  SC</div>
+                <div class="ml-4">
+                  <p class="font-bold">Sofia C.</p>
+                  <p class="text-gray-600 text-sm">Cliente da 1 anno</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonianza 4 -->
+          <div class="swiper-slide">
+            <div class="bg-[var(--rosa-chiaro)] shadow-md p-8 rounded-lg h-full">
+              <p class="mb-6 text-lg italic testimonianza-content">Ho iniziato l'EFT con molto scetticismo, ma i
+                risultati
+                mi hanno stupito. Il mio sonno è migliorato notevolmente e mi sento più energica durante il giorno.</p>
+              <div class="flex items-center">
+                <div
+                  class="flex justify-center items-center bg-[var(--rosa-scuro)] rounded-full w-12 h-12 font-bold text-white">
+                  AG</div>
+                <div class="ml-4">
+                  <p class="font-bold">Anna G.</p>
+                  <p class="text-gray-600 text-sm">Cliente da 4 mesi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-[var(--bianco-crema)] py-10 md:py-20">
+    <div class="mx-auto px-6 container">
+      <div class="mb-16 text-center">
+        <h3 class="mb-4 font-bold text-4xl">Domande Frequenti</h3>
+        <div class="bg-[var(--rosa-scuro)] mx-auto rounded-full w-24 h-1"></div>
+        <p class="mx-auto mt-6 max-w-2xl text-gray-600">Trova le risposte alle domande più comuni sull'EFT e sul
+          percorso
+          di benessere</p>
+      </div>
+      <div class="space-y-4 mx-auto max-w-3xl">
+        <!-- FAQ 1 -->
+        <details class="bg-white shadow-md rounded-lg">
+          <summary class="font-semibold text-lg">
+            Cos'è l'EFT e come funziona?
+          </summary>
+          <div class="content">
+            <p class="text-gray-600 leading-relaxed">
+              L'EFT (Emotional Freedom Technique) è una forma di psicologia energetica che combina la stimolazione di
+              punti specifici del corpo (derivati dall'agopuntura) con la focalizzazione mentale sul problema da
+              risolvere. Questa tecnica aiuta a liberare blocchi emotivi e energetici, riducendo stress, ansia e altri
+              disturbi emotivi.
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="bg-white shadow-md rounded-lg">
+          <summary class="font-semibold text-lg">
+            Quanto dura una sessione di EFT?
+          </summary>
+          <div class="content">
+            <p class="text-gray-600 leading-relaxed">
+              Una sessione tipica di EFT dura circa 60 minuti.<br>Durante questo tempo, lavoreremo insieme per
+              identificare le problematiche da affrontare e applicheremo la tecnica in modo mirato.<br><br><b>Per
+                problematiche più complesse potrebbero essere necessarie più sessioni.</b>
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="bg-white shadow-md rounded-lg">
+          <summary class="font-semibold text-lg">
+            Per quali problemi è indicato l'EFT?
+          </summary>
+          <div class="content">
+            <p class="text-gray-600 leading-relaxed">
+              L'EFT può essere efficace per numerose situazioni, tra cui:
+            <ul class="mt-2 ml-6 list-disc">
+              <li>Stress e ansia</li>
+              <li>Paure e fobie</li>
+              <li>Traumi emotivi</li>
+              <li>Problemi di autostima</li>
+              <li>Disturbi del sonno</li>
+              <li>Dolori cronici</li>
+            </ul>
+            </p>
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="bg-white shadow-md rounded-lg">
+          <summary class="font-semibold text-lg">
+            È necessaria esperienza precedente?
+          </summary>
+          <div class="content">
+            <p class="text-gray-600 leading-relaxed">
+              No, l'EFT può essere praticato da chiunque, indipendentemente dall'esperienza precedente. Durante la
+              sessione, ti guiderò passo dopo passo attraverso il processo, insegnandoti anche come utilizzare la
+              tecnica
+              autonomamente a casa.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="bg-[var(--bianco-crema)] py-10 md:py-20">
+    <div class="mx-auto px-6 container">
+      <div class="space-y-4 mx-auto max-w-3xl">
+        <div class="mb-16 text-center">
+          <h3 class="mb-4 font-bold text-4xl">Contattami</h3>
+          <div class="bg-[var(--rosa-scuro)] mx-auto rounded-full w-24 h-1"></div>
+          <p class="mx-auto mt-6 max-w-2xl text-gray-600">Sono qui per rispondere alle tue domande e aiutarti nel tuo
+            percorso di benessere</p>
+        </div>
+        <form class="bg-white shadow-md mt-6 p-6 rounded-lg">
+          <label class="block mb-2 font-semibold">Nome</label>
+          <input type="text" class="p-2 border border-gray-300 rounded w-full" placeholder="Il tuo nome" />
+          <label class="block mt-4 mb-2 font-semibold">Email</label>
+          <input type="email" class="p-2 border border-gray-300 rounded w-full" placeholder="La tua email" />
+          <label class="block mt-4 mb-2 font-semibold">Messaggio</label>
+          <textarea class="p-2 border border-gray-300 rounded w-full h-32"
+            placeholder="Scrivi il tuo messaggio..."></textarea>
+          <button type="submit"
+            class="bg-[var(--rosa-scuro)] hover:bg-pink-700 shadow-md mt-4 px-6 py-3 rounded-lg text-white transition">
+            Invia Messaggio
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative bg-[var(--rosa-scuro)] py-6 h-[100px] text-white text-center">
+    <p>&copy; 2025 EFT Loredana - Tutti i diritti riservati</p>
+    <p class="mt-2">
+      Seguimi su: <a href="#" class="underline">Instagram</a> | <a href="#" class="underline">TikTok</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
