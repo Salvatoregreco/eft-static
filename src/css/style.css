@@ -1,1 +1,212 @@
 @import 'tailwindcss';
+
+:root {
+    --rosa-chiaro: #f8d7dd;
+    --rosa-scuro: #e49ab0;
+    --grigio-antracite: #444444;
+    --bianco-crema: #fefaf5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+details {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+
+details[open] {
+    background-color: var(--bianco-crema);
+    /* border-left: 2px solid var(--rosa-scuro); */
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary {
+    padding: 1rem;
+    padding-right: 2.5rem;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+details summary::after {
+    content: '+';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: var(--rosa-scuro);
+    transition: transform 0.2s ease-in-out;
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* Animazione del contenuto */
+details .content {
+    padding: 0 1rem 1rem 1rem;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+details[open] .content {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Aggiunta hover state */
+details:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Aggiungi questi stili per le testimonianze */
+.testimonialSwiper {
+    padding: 20px 40px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.swiper-pagination {
+    /* Spostiamo la paginazione più in basso */
+    bottom: 0 !important;
+    position: relative !important;
+    margin-top: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--rosa-scuro) !important;
+}
+
+/* Modifica questi stili per garantire altezza uniforme */
+.swiper-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.swiper-slide > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fa sì che il contenuto principale prenda tutto lo spazio disponibile */
+.swiper-slide .testimonianza-content {
+    flex-grow: 1;
+}
+
+/* Stili per le card dei servizi */
+.service-card {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.25rem;
+    background: var(--rosa-scuro);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card .w-20 {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover .w-20 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card ul li {
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-card ul li:hover {
+    transform: translateX(0.5rem);
+}
+
+/* Aggiungi questi stili alla fine del file */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(228, 154, 176, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+#mobile-menu:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#mobile-menu ul {
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu:not(.hidden) ul {
+    transform: translateY(0);
+}
+
+/* Animazione per il pulsante del menu */
+#mobile-menu-button {
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu-button:hover {
+    transform: scale(1.1);
+}
+
+#mobile-menu-close {
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu-close:hover {
+    transform: rotate(90deg);
+}
